@@ -23,8 +23,8 @@ export default function Header() {
               <span className="text-white font-bold text-xl">🌞</span>
             </div>
             <div>
-              <h1 className="font-heading font-bold text-xl text-gray-900">Sunshine Preschool</h1>
-              <p className="text-sm text-gray-600">Where Learning Begins</p>
+              <h1 className="font-heading font-bold text-xl text-gray-900">Dina's Day Care</h1>
+              <p className="text-sm text-gray-600">Nurturing Care Every Day</p>
             </div>
           </div>
 

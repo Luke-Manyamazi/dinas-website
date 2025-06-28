@@ -1,8 +1,8 @@
-# Sunshine Preschool Website
+# Dina's Day Care Website
 
 ## Overview
 
-This is a modern, responsive website for Sunshine Preschool built with React, TypeScript, and Tailwind CSS. The application features a single-page design with smooth scrolling navigation, contact form functionality, and a clean, child-friendly interface. The project uses a full-stack architecture with Express.js backend and PostgreSQL database integration via Drizzle ORM.
+This is a modern, responsive website for Dina's Day Care built with React, TypeScript, and Tailwind CSS. The application features a single-page design with smooth scrolling navigation, contact form functionality, and a clean, child-friendly interface. The project uses a full-stack architecture with Express.js backend and PostgreSQL database integration via Drizzle ORM.
 
 ## System Architecture
 
