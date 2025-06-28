@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logo from "../assets/logo.png";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -8,7 +9,7 @@ export default function Header() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
       setMobileMenuOpen(false);
     }
   };
@@ -20,14 +21,16 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <div className="w-12 h-12 flex items-center justify-center">
-              <img 
-                src="@assets/Dina New Logo_1751119594701.png" 
-                alt="Dina's Day Care Logo" 
+              <img
+                src={logo}
+                alt="Dina's Day Care Logo"
                 className="w-12 h-12 object-contain"
               />
             </div>
             <div>
-              <h1 className="font-heading font-bold text-xl text-gray-900">Dina's Day Care Center</h1>
+              <h1 className="font-heading font-bold text-xl text-gray-900">
+                Dina's Day Care Center
+              </h1>
               <p className="text-sm text-gray-600">Nurturing Care Every Day</p>
             </div>
           </div>
@@ -35,37 +38,41 @@ export default function Header() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <button
-              onClick={() => scrollToSection('home')}
+              onClick={() => scrollToSection("home")}
               className="text-gray-700 hover:text-primary transition-colors duration-300 font-medium"
             >
               Home
             </button>
             <button
-              onClick={() => scrollToSection('about')}
+              onClick={() => scrollToSection("about")}
               className="text-gray-700 hover:text-primary transition-colors duration-300 font-medium"
             >
               About
             </button>
             <button
-              onClick={() => scrollToSection('programs')}
+              onClick={() => scrollToSection("programs")}
               className="text-gray-700 hover:text-primary transition-colors duration-300 font-medium"
             >
               Programs
             </button>
             <button
-              onClick={() => scrollToSection('gallery')}
+              onClick={() => scrollToSection("gallery")}
               className="text-gray-700 hover:text-primary transition-colors duration-300 font-medium"
             >
               Gallery
             </button>
             <button
-              onClick={() => scrollToSection('contact')}
+              onClick={() => scrollToSection("contact")}
               className="text-gray-700 hover:text-primary transition-colors duration-300 font-medium"
             >
               Contact
             </button>
-            <Button className="bg-primary text-white hover:bg-blue-700 rounded-full font-medium">
-              Enroll Now
+            <Button
+              onClick={() => scrollToSection("contact")}
+              className="bg-primary text-white hover:bg-blue-700 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl px-8 py-4"
+            >
+              {" "}
+              Enrol Now
             </Button>
           </div>
 
@@ -76,7 +83,11 @@ export default function Header() {
             className="md:hidden"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {mobileMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
           </Button>
         </div>
 
@@ -85,31 +96,31 @@ export default function Header() {
           <div className="md:hidden border-t border-gray-200 pt-4 pb-6">
             <div className="flex flex-col space-y-4">
               <button
-                onClick={() => scrollToSection('home')}
+                onClick={() => scrollToSection("home")}
                 className="text-gray-700 hover:text-primary transition-colors duration-300 font-medium py-2 text-left"
               >
                 Home
               </button>
               <button
-                onClick={() => scrollToSection('about')}
+                onClick={() => scrollToSection("about")}
                 className="text-gray-700 hover:text-primary transition-colors duration-300 font-medium py-2 text-left"
               >
                 About
               </button>
               <button
-                onClick={() => scrollToSection('programs')}
+                onClick={() => scrollToSection("programs")}
                 className="text-gray-700 hover:text-primary transition-colors duration-300 font-medium py-2 text-left"
               >
                 Programs
               </button>
               <button
-                onClick={() => scrollToSection('gallery')}
+                onClick={() => scrollToSection("gallery")}
                 className="text-gray-700 hover:text-primary transition-colors duration-300 font-medium py-2 text-left"
               >
                 Gallery
               </button>
               <button
-                onClick={() => scrollToSection('contact')}
+                onClick={() => scrollToSection("contact")}
                 className="text-gray-700 hover:text-primary transition-colors duration-300 font-medium py-2 text-left"
               >
                 Contact

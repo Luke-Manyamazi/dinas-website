@@ -1,10 +1,12 @@
-import { Facebook, Twitter, Linkedin } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
+import logo from "../assets/logo.png";
+import { FaTiktok, FaGoogle } from "react-icons/fa";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -16,29 +18,55 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <div className="w-12 h-12 flex items-center justify-center">
-                <img 
-                  src="@assets/Dina New Logo_1751119594701.png" 
-                  alt="Dina's Day Care Logo" 
+                <img
+                  src={logo}
+                  alt="Dina's Day Care Logo"
                   className="w-12 h-12 object-contain"
                 />
               </div>
               <div>
-                <h3 className="font-heading font-bold text-xl">Dina's Day Care Center</h3>
-                <p className="text-gray-400 text-sm">Nurturing Care Every Day</p>
+                <h3 className="font-heading font-bold text-xl">
+                  Dina's Day Care Center
+                </h3>
+                <p className="text-gray-400 text-sm">
+                  Nurturing Care Every Day
+                </p>
               </div>
             </div>
             <p className="text-gray-400 mb-4 max-w-md">
-              Providing exceptional early childhood education in a nurturing, safe environment where children develop a love for learning that lasts a lifetime.
+              Providing exceptional early childhood education in a nurturing,
+              safe environment where children develop a love for learning that
+              lasts a lifetime.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300">
+              <a
+                href="https://www.facebook.com/dinasdaycarecentre"
+                target="_blank"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300"
+              >
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300">
-                <Twitter className="w-5 h-5" />
+              <a
+                href="https://www.tiktok.com/@dinas.day.care"
+                target="_blank"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300"
+              >
+                <FaTiktok className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300">
-                <Linkedin className="w-5 h-5" />
+              <a
+                href="https://www.instagram.com/dinasdayacare/"
+                target="_blank"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href="https://g.page/r/CY0x1vj11nG7EBM/review"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300"
+              >
+                <FaGoogle className="w-5 h-5 text-white" />
               </a>
             </div>
           </div>
@@ -48,45 +76,61 @@ export default function Footer() {
             <h4 className="font-heading font-bold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2 text-gray-400">
               <li>
-                <button 
-                  onClick={() => scrollToSection('about')} 
+                <button
+                  onClick={() => scrollToSection("about")}
                   className="hover:text-white transition-colors duration-300 text-left"
                 >
                   About Us
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('programs')} 
+                <button
+                  onClick={() => scrollToSection("programs")}
                   className="hover:text-white transition-colors duration-300 text-left"
                 >
                   Programs
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('gallery')} 
+                <button
+                  onClick={() => scrollToSection("gallery")}
                   className="hover:text-white transition-colors duration-300 text-left"
                 >
                   Gallery
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('contact')} 
+                <button
+                  onClick={() => scrollToSection("contact")}
                   className="hover:text-white transition-colors duration-300 text-left"
                 >
                   Contact
                 </button>
               </li>
-              <li><a href="#" className="hover:text-white transition-colors duration-300">Enrollment</a></li>
-              <li><a href="#" className="hover:text-white transition-colors duration-300">Parent Portal</a></li>
+              <li>
+                <a
+                  href="#"
+                  className="hover:text-white transition-colors duration-300"
+                >
+                  Enrollment
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="hover:text-white transition-colors duration-300"
+                >
+                  Parent Portal
+                </a>
+              </li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-heading font-bold text-lg mb-4">Contact Info</h4>
+            <h4 className="font-heading font-bold text-lg mb-4">
+              Contact Info
+            </h4>
             <div className="space-y-3 text-gray-400">
               <div>
                 <p className="text-sm">📍 11th Street, Kensington</p>
@@ -105,9 +149,14 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Dina's Day Care Center. All rights reserved. |{" "}
-            <a href="#" className="hover:text-white transition-colors duration-300">Privacy Policy</a> |{" "}
-            <a href="#" className="hover:text-white transition-colors duration-300">Terms of Service</a>
+            © 2025 Dina's Day Care Center. All rights reserved. |{" "}
+            <a
+              href="https://camluk.co.za/"
+              target="_blank"
+              className="hover:text-white transition-colors duration-300"
+            >
+              Site by Camluk Technologies
+            </a>{" "}
           </p>
         </div>
       </div>

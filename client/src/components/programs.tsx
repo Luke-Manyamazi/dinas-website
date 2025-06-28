@@ -1,6 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import img9 from "../assets/img9.jpg";
+import img1 from "../assets/img1.jpg";
+import img22 from "../assets/img22.jpg";
+import img23 from "../assets/img23.jpg";
+import img25 from "../assets/img25.jpg";
+import img19 from "../assets/img19.jpg";
 
 export default function Programs() {
   const programs = [
@@ -9,80 +15,89 @@ export default function Programs() {
       ageRange: "6-18 months",
       badgeColor: "bg-primary/10 text-primary",
       buttonColor: "bg-primary hover:bg-blue-700",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
-      description: "Gentle care and early stimulation activities to support your baby's development in a loving environment.",
+      image: img1,
+      description:
+        "Gentle care and early stimulation activities to support your baby's development in a loving environment.",
       features: [
         "Individualized feeding schedules",
         "Sensory play activities",
-        "Music and movement"
-      ]
+        "Music and movement",
+      ],
     },
     {
       title: "Toddler Program",
       ageRange: "18-36 months",
       badgeColor: "bg-secondary/10 text-secondary",
       buttonColor: "bg-secondary hover:bg-yellow-600",
-      image: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
-      description: "Encouraging independence and social skills through structured play and exploration activities.",
+      image: img9,
+      description:
+        "Encouraging independence and social skills through structured play and exploration activities.",
       features: [
         "Language development",
         "Creative arts and crafts",
-        "Outdoor playground time"
-      ]
+        "Outdoor playground time",
+      ],
     },
     {
       title: "Preschool",
       ageRange: "3-4 years",
       badgeColor: "bg-accent/10 text-accent",
       buttonColor: "bg-accent hover:bg-green-600",
-      image: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
-      description: "Preparing children for kindergarten with structured learning activities and social skill development.",
+      image: img22,
+      description:
+        "Preparing children for kindergarten with structured learning activities and social skill development.",
       features: [
         "Pre-literacy and math skills",
         "Science experiments",
-        "Group activities"
-      ]
+        "Group activities",
+      ],
     },
     {
-      title: "Pre-Kindergarten",
+      title: "Pre-Grade R",
       ageRange: "4-5 years",
       badgeColor: "bg-purple-100 text-purple-600",
       buttonColor: "bg-purple-500 hover:bg-purple-600",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
-      description: "Advanced preparation for kindergarten with focus on academic readiness and independence.",
+      image: img23,
+      description:
+        "Advanced preparation for kindergarten with focus on academic readiness and independence.",
       features: [
         "Reading and writing basics",
         "Mathematical concepts",
-        "Leadership skills"
-      ]
+        "Leadership skills",
+      ],
     },
     {
       title: "After School",
       ageRange: "5-12 years",
       badgeColor: "bg-red-100 text-red-600",
       buttonColor: "bg-red-500 hover:bg-red-600",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
-      description: "Safe, supervised care with homework help and enrichment activities for school-age children.",
-      features: [
-        "Homework assistance",
-        "STEM activities",
-        "Sports and games"
-      ]
+      image: img25,
+      description:
+        "Safe, supervised care with homework help and enrichment activities for school-age children.",
+      features: ["Homework assistance", "STEM activities", "Sports and games"],
     },
     {
-      title: "Summer Camp",
-      ageRange: "3-12 years",
+      title: "Extra Lessons",
+      ageRange: "Grade R-7",
       badgeColor: "bg-yellow-100 text-yellow-600",
       buttonColor: "bg-yellow-500 hover:bg-yellow-600",
-      image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=250",
-      description: "Fun-filled summer program with field trips, outdoor activities, and creative projects.",
+      image: img19,
+      description:
+        "Supportive after-school program focused on boosting academic performance.",
       features: [
-        "Weekly field trips",
-        "Water play activities",
-        "Arts and crafts"
-      ]
-    }
+        "Homework support and revision",
+        "Interactive math and reading sessions",
+        "One-on-one tutoring and progress tracking",
+      ],
+    },
   ];
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <section id="programs" className="py-20 bg-gray-50">
@@ -92,18 +107,22 @@ export default function Programs() {
             Our Programs
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Age-appropriate programs designed to nurture development at every stage of your child's early years.
+            Age-appropriate programs designed to nurture development at every
+            stage of your child's early years.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {programs.map((program, index) => (
-            <Card key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="relative">
-                <img 
-                  src={program.image} 
+            <Card
+              key={index}
+              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div className="relative overflow-hidden group">
+                <img
+                  src={program.image}
                   alt={program.title}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-48 object-cover object-[50%_30%] scale-90 transform group-hover:scale-100 transition-transform duration-300"
                 />
               </div>
               <CardHeader className="p-6">
@@ -111,25 +130,31 @@ export default function Programs() {
                   <CardTitle className="font-heading font-bold text-xl text-gray-900">
                     {program.title}
                   </CardTitle>
-                  <Badge className={`${program.badgeColor} px-3 py-1 rounded-full text-sm font-medium`}>
+                  <Badge
+                    className={`${program.badgeColor} px-3 py-1 rounded-full text-sm font-medium`}
+                  >
                     {program.ageRange}
                   </Badge>
                 </div>
               </CardHeader>
               <CardContent className="p-6 pt-0">
-                <p className="text-gray-600 mb-4">
-                  {program.description}
-                </p>
+                <p className="text-gray-600 mb-4">{program.description}</p>
                 <ul className="space-y-2 text-sm text-gray-600 mb-6">
                   {program.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center space-x-2">
+                    <li
+                      key={featureIndex}
+                      className="flex items-center space-x-2"
+                    >
                       <span className="w-1.5 h-1.5 bg-primary rounded-full"></span>
                       <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
-                <Button className={`w-full ${program.buttonColor} text-white py-3 rounded-lg transition-colors duration-300 font-medium`}>
-                  Learn More
+                <Button
+                  onClick={() => scrollToSection("contact")}
+                  className={`w-full ${program.buttonColor} text-white py-3 rounded-lg transition-colors duration-300 font-medium text-left hover:text-primary`}
+                >
+                  Enrol Today
                 </Button>
               </CardContent>
             </Card>

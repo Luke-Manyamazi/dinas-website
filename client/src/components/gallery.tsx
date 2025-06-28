@@ -1,37 +1,43 @@
 import { Button } from "@/components/ui/button";
+import img1 from "../assets/img1.jpg";
+import img4 from "../assets/img4.jpg";
+import img11 from "../assets/img11.jpg";
+import img14 from "../assets/img14.jpg";
+import img21 from "../assets/img21.jpg";
+import img24 from "../assets/img24.jpg";
 
 export default function Gallery() {
   const galleryItems = [
     {
-      image: "https://images.unsplash.com/photo-1596464716127-f2a82984de30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
+      image: img4,
       title: "Creative Play",
-      description: "Building imagination through play"
+      description: "Building imagination through play",
     },
     {
-      image: "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
+      image: img11,
       title: "Arts & Crafts",
-      description: "Expressing creativity through art"
+      description: "Expressing creativity through art",
     },
     {
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
+      image: img14,
       title: "Outdoor Fun",
-      description: "Active play and exploration"
+      description: "Active play and exploration",
     },
     {
-      image: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
+      image: img21,
       title: "Story Time",
-      description: "Developing language skills"
+      description: "Developing language skills",
     },
     {
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
+      image: img24,
       title: "Science Fun",
-      description: "Discovering the world around us"
+      description: "Discovering the world around us",
     },
     {
-      image: "https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=300",
+      image: img1,
       title: "Learning Centers",
-      description: "Organized spaces for exploration"
-    }
+      description: "Organized spaces for exploration",
+    },
   ];
 
   return (
@@ -42,17 +48,21 @@ export default function Gallery() {
             Our Gallery
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Take a peek into our vibrant learning environment and see the joy of discovery in action.
+            Take a peek into our vibrant learning environment and see the joy of
+            discovery in action.
           </p>
         </div>
 
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {galleryItems.map((item, index) => (
-            <div key={index} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
-              <img 
-                src={item.image} 
-                alt={item.title} 
+            <div
+              key={index}
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+            >
+              <img
+                src={item.image}
+                alt={item.title}
                 className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -66,8 +76,15 @@ export default function Gallery() {
         </div>
 
         <div className="text-center mt-12">
-          <Button className="bg-primary text-white hover:bg-blue-700 rounded-full font-medium px-8 py-3">
-            View More Photos
+          <Button asChild>
+            <a
+              href="https://photos.app.goo.gl/r5g5iqdYn3Lr4oeC9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-primary text-white hover:bg-blue-700 rounded-full font-medium px-8 py-3"
+            >
+              View More Photos
+            </a>
           </Button>
         </div>
       </div>
