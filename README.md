@@ -1,4 +1,3 @@
-```markdown
 # Dina's Day Care Website
 
 Welcome to the official website for **Dina's Day Care**, a responsive and child-friendly web platform built to inform, engage, and serve parents interested in early childhood development programs.
@@ -7,7 +6,6 @@ Welcome to the official website for **Dina's Day Care**, a responsive and child-
 
 👉 [View Website](https://www.dinasgroup.co.za) ← _replace with actual URL_
 
----
 
 ## 🧸 Features
 
@@ -34,7 +32,7 @@ Welcome to the official website for **Dina's Day Care**, a responsive and child-
 
 ## 📁 Folder Structure
 
-```
+
 
 DinasWebsite/
 ├── assets/              # Static images and media
@@ -46,7 +44,6 @@ DinasWebsite/
 ├── public/              # Static HTML and favicon
 ├── package.json
 
-````
 
 ---
 
@@ -57,7 +54,7 @@ DinasWebsite/
    ```bash
    git clone https://github.com/your-username/dinas-day-care.git
    cd dinas-day-care
-````
+   ```
 
 2. Install dependencies:
 
@@ -73,7 +70,6 @@ DinasWebsite/
 
 4. Visit [http://localhost:5173](http://localhost:5173)
 
----
 
 ## 📦 Build
 
@@ -89,7 +85,6 @@ To preview:
 npm run preview
 ```
 
----
 
 ## 📧 Contact
 
