@@ -78,7 +78,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Address</h4>
-                  <p className="text-gray-600">123 Learning Lane<br />Sunshine City, SC 12345</p>
+                  <p className="text-gray-600">11th Street, Kensington<br />Cape Town, 7405</p>
                 </div>
               </div>
 
@@ -88,7 +88,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
-                  <p className="text-gray-600">(555) 123-4567</p>
+                  <p className="text-gray-600">067 407 3148</p>
                 </div>
               </div>
 
@@ -98,7 +98,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                  <p className="text-gray-600">hello@dinasdaycare.com</p>
+                  <p className="text-gray-600">info.daycare@dinasgroup.co.za</p>
                 </div>
               </div>
 
@@ -108,7 +108,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Hours</h4>
-                  <p className="text-gray-600">Monday - Friday<br />6:30 AM - 6:30 PM</p>
+                  <p className="text-gray-600">Monday - Friday<br />7:00 AM - 5:00 PM</p>
                 </div>
               </div>
             </div>
@@ -186,7 +186,7 @@ export default function Contact() {
                       <FormItem>
                         <FormLabel>Phone Number</FormLabel>
                         <FormControl>
-                          <Input type="tel" placeholder="(555) 123-4567" {...field} />
+                          <Input type="tel" placeholder="067 407 3148" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>

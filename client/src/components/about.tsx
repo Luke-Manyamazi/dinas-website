@@ -6,7 +6,7 @@ export default function About() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-heading font-bold text-3xl sm:text-4xl text-gray-900 mb-4">
-            About Dina's Day Care
+            About Dina's Day Care Center
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             For over a decade, we've been dedicated to providing exceptional early childhood education that prepares children for lifelong learning and success.
@@ -24,7 +24,7 @@ export default function About() {
           <div>
             <h3 className="font-heading font-bold text-2xl text-gray-900 mb-6">Our Mission</h3>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              At Dina's Day Care, we believe every child is unique and deserves an environment where they can explore, discover, and grow. Our nurturing approach combines quality care with educational activities that encourage creativity, critical thinking, and social development.
+              At Dina's Day Care Center, we believe every child is unique and deserves an environment where they can explore, discover, and grow. Our nurturing approach combines quality care with educational activities that encourage creativity, critical thinking, and social development.
             </p>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">

@@ -19,11 +19,15 @@ export default function Header() {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl">🌞</span>
+            <div className="w-12 h-12 flex items-center justify-center">
+              <img 
+                src="@assets/Dina New Logo_1751119594701.png" 
+                alt="Dina's Day Care Logo" 
+                className="w-12 h-12 object-contain"
+              />
             </div>
             <div>
-              <h1 className="font-heading font-bold text-xl text-gray-900">Dina's Day Care</h1>
+              <h1 className="font-heading font-bold text-xl text-gray-900">Dina's Day Care Center</h1>
               <p className="text-sm text-gray-600">Nurturing Care Every Day</p>
             </div>
           </div>

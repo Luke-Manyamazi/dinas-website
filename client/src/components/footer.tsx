@@ -15,11 +15,15 @@ export default function Footer() {
           {/* Logo and Description */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">🌞</span>
+              <div className="w-12 h-12 flex items-center justify-center">
+                <img 
+                  src="@assets/Dina New Logo_1751119594701.png" 
+                  alt="Dina's Day Care Logo" 
+                  className="w-12 h-12 object-contain"
+                />
               </div>
               <div>
-                <h3 className="font-heading font-bold text-xl">Dina's Day Care</h3>
+                <h3 className="font-heading font-bold text-xl">Dina's Day Care Center</h3>
                 <p className="text-gray-400 text-sm">Nurturing Care Every Day</p>
               </div>
             </div>
@@ -85,14 +89,14 @@ export default function Footer() {
             <h4 className="font-heading font-bold text-lg mb-4">Contact Info</h4>
             <div className="space-y-3 text-gray-400">
               <div>
-                <p className="text-sm">📍 123 Learning Lane</p>
-                <p className="text-sm">Sunshine City, SC 12345</p>
+                <p className="text-sm">📍 11th Street, Kensington</p>
+                <p className="text-sm">Cape Town, 7405</p>
               </div>
-              <p className="text-sm">📞 (555) 123-4567</p>
-              <p className="text-sm">✉️ hello@dinasdaycare.com</p>
+              <p className="text-sm">📞 067 407 3148</p>
+              <p className="text-sm">✉️ info.daycare@dinasgroup.co.za</p>
               <div>
                 <p className="text-sm font-medium text-white">Hours:</p>
-                <p className="text-sm">Mon-Fri: 6:30 AM - 6:30 PM</p>
+                <p className="text-sm">Mon-Fri: 7:00 AM - 5:00 PM</p>
               </div>
             </div>
           </div>
@@ -101,7 +105,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Dina's Day Care. All rights reserved. |{" "}
+            © 2024 Dina's Day Care Center. All rights reserved. |{" "}
             <a href="#" className="hover:text-white transition-colors duration-300">Privacy Policy</a> |{" "}
             <a href="#" className="hover:text-white transition-colors duration-300">Terms of Service</a>
           </p>
