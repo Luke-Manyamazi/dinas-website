@@ -189,7 +189,7 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel>First Name *</FormLabel>
                           <FormControl>
-                            <Input placeholder="John" {...field} />
+                            <Input placeholder="First Name" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -202,7 +202,7 @@ export default function Contact() {
                         <FormItem>
                           <FormLabel>Last Name *</FormLabel>
                           <FormControl>
-                            <Input placeholder="Doe" {...field} />
+                            <Input placeholder="Last Name" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -220,7 +220,7 @@ export default function Contact() {
                         <FormControl>
                           <Input
                             type="email"
-                            placeholder="john.doe@email.com"
+                            placeholder="Enter your email"
                             {...field}
                           />
                         </FormControl>
@@ -239,8 +239,9 @@ export default function Contact() {
                         <FormControl>
                           <Input
                             type="tel"
-                            placeholder="067 407 3148"
+                            placeholder="Phone Number"
                             {...field}
+                            value={field.value ?? ""}
                           />
                         </FormControl>
                         <FormMessage />
@@ -257,7 +258,7 @@ export default function Contact() {
                         <FormLabel>Child's Age</FormLabel>
                         <Select
                           onValueChange={field.onChange}
-                          defaultValue={field.value}
+                          defaultValue={field.value ?? undefined}
                         >
                           <FormControl>
                             <SelectTrigger>
