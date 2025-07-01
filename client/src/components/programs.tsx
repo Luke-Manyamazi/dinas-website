@@ -67,7 +67,7 @@ export default function Programs() {
       ],
     },
     {
-      title: "After School",
+      title: "After Care",
       ageRange: "5-12 years",
       badgeColor: "bg-red-100 text-red-600",
       buttonColor: "bg-red-500 hover:bg-red-600",
