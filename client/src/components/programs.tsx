@@ -78,7 +78,7 @@ export default function Programs() {
     },
     {
       title: "Extra Lessons",
-      ageRange: "Grade R-7",
+      ageRange: "Grade 1-7",
       badgeColor: "bg-yellow-100 text-yellow-600",
       buttonColor: "bg-yellow-500 hover:bg-yellow-600",
       image: img19,
@@ -86,7 +86,7 @@ export default function Programs() {
         "Supportive after-school program focused on boosting academic performance.",
       features: [
         "Homework support and revision",
-        "Interactive math and reading sessions",
+        "Interactive math and english sessions",
         "One-on-one tutoring and progress tracking",
       ],
     },
